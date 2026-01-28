@@ -4,7 +4,7 @@ import Main from "./components/organism/Main";
 
 function App() {
   return (
-    <div className="bg-platinum flex flex-col justify-between min-h-screen p-3">
+    <div className="bg-platinum font-primary flex flex-col justify-between min-h-screen py-3 px-6">
       <Header />
       <Main />
       <Footer />

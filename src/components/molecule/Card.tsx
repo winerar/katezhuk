@@ -6,9 +6,9 @@ type Props = {
 
 function Card({ children }: Props) {
   return (
-    <div className="w-50">
-      <Glass>
-        <div className="p-3 text-platinum h-100">{children}</div>
+    <div className="w-full lg:w-80">
+      <Glass type="offset">
+        <div className="p-6 text-platinum">{children}</div>
       </Glass>
     </div>
   );

@@ -4,5 +4,22 @@
   "telegramLink": "https://t.me/moonelfff",
   "telegram": "Телеграм",
   "instagramLink": "https://www.instagram.com/kate.zhuk.psy/",
-  "instagram": "Инстаграм"
+  "instagram": "Инстаграм",
+  "packages": [
+    {
+      "title": "4 сессии",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "price": "16 000 ₽"
+    },
+    {
+      "title": "8 сессий",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "price": "30 000 ₽"
+    },
+    {
+      "title": "12 сессий",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "price": "43 000 ₽"
+    }
+  ]
 }
