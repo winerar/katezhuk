@@ -44,7 +44,7 @@
 }
 
 .backdrop-glass-offset {
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px) !important;
   -webkit-backdrop-filter: blur(3px);
 }
 
@@ -69,7 +69,7 @@
 }
 
 .button-glass:hover {
-  backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px) !important;
   -webkit-backdrop-filter: blur(6px);
 }
 
