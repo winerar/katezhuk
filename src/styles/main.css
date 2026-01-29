@@ -3,12 +3,14 @@
 
 @theme {
   --font-primary: "Mulish", system-ui, sans-serif;
+  --font-numerical: "Play", system-ui, sans-serif;
 
   --color-dusty-grape: #614b8e;
   --color-alabaster-grey: #daddd8;
   --color-soft-linnen: #ecebe4;
-  --color-platinum: #eef0f2;
+  --color-platinum: #f9fffa;
   --color-black: #080705;
+  --color-gold: #eebf28;
 }
 
 .shadow-effect {
@@ -36,16 +38,16 @@
 }
 
 .backdrop-glass {
-  background: rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.6);
+  background: rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 24px;
   position: relative;
   z-index: 0;
 }
 
 .backdrop-glass-offset {
-  backdrop-filter: blur(3px) !important;
-  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(1px) !important;
+  -webkit-backdrop-filter: blur(1px);
 }
 
 .backdrop-glass::before {
@@ -69,12 +71,14 @@
 }
 
 .button-glass:hover {
-  backdrop-filter: blur(6px) !important;
-  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(1px) !important;
+  -webkit-backdrop-filter: blur(1px);
 }
 
 .button-shadow::after {
   transition: transform 0.2s ease-in-out;
+  background-color: var(--color-black);
+  /* background-color: var(--color-gold); */
 }
 
 .button-shadow:hover::after {

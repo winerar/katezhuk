@@ -1,9 +1,11 @@
 import Typography from "../atom/Typography";
 import content from "@/assets/data/content.json";
+import photo from "@/assets/images/kate_zhuk.jpg";
+import Image from "../molecule/Image";
 
 function Profile() {
   return (
-    <div className="flex justify-between gap-3 flex-wrap">
+    <div className="flex-col lg:flex-row flex justify-between gap-3 flex-wrap">
       <div>
         <Typography component="h1">{content.fullName}</Typography>
         <Typography component="h2">{content.professionDescription}</Typography>
@@ -33,7 +35,9 @@ function Profile() {
         </p>
         <p>Со мной можно без масок.</p>
       </div>
-      <div className="w-100 h-100 border-1">Место для фото</div>
+      <div className="flex justify-center">
+        <Image src={photo} alt="Profile" className="w-150" />
+      </div>
     </div>
   );
 }

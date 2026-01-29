@@ -13,7 +13,7 @@ function PriceItem({ title, description, price }: Props) {
       <Typography component="h3">{title}</Typography>
       <Typography component="p">{description}</Typography>
       <div className="flex justify-end">
-        <Typography component="span" className="text-lg">
+        <Typography component="span" className="text-2xl font-numerical pt-6">
           {price}
         </Typography>
       </div>
