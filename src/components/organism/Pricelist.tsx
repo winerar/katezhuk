@@ -7,7 +7,7 @@ function Pricelist() {
   return (
     <div>
       <Typography component="h2">Пакеты консультаций и цены</Typography>
-      <div className="flex gap-3 flex-wrap justify-center">
+      <div className="flex flex-col lg:flex-row gap-3 justify-center">
         {content.packages.map(
           (pkg: { title: string; description: string; price: string }) => (
             <PriceItem
