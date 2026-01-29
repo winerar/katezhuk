@@ -5,8 +5,8 @@ import Image from "../molecule/Image";
 
 function Profile() {
   return (
-    <div className="flex-col lg:flex-row flex justify-between gap-3 flex-wrap">
-      <div>
+    <div className="flex-col lg:flex-row flex justify-between gap-3">
+      <div className="w-full lg:w-2/3">
         <Typography component="h1">{content.fullName}</Typography>
         <Typography component="h2">{content.professionDescription}</Typography>
         <p>Мой подход — интегративный.</p>
