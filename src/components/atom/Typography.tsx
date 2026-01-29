@@ -11,13 +11,13 @@ function Typography({ children, component = "p", className = "" }: Props) {
 
   switch (component) {
     case "h1":
-      classes = `text-4xl font-semibold text-dusty-grape mb-5 ${className}`;
+      classes = `text-4xl font-semibold text-dusty-grape mb-8 ${className}`;
       break;
     case "h2":
-      classes = `text-3xl font-semibold mb-4 ${className}`;
+      classes = `text-3xl font-semibold mb-6 ${className}`;
       break;
     case "h3":
-      classes = `text-2xl font-semibold mb-3 ${className}`;
+      classes = `text-2xl font-semibold mb-4 ${className}`;
       break;
     case "h4":
       classes = `text-xl ${className}`;

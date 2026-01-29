@@ -6,7 +6,7 @@ type Props = {
 
 function Card({ children }: Props) {
   return (
-    <div className="w-full lg:w-auto">
+    <div className="">
       <Glass type="offset">
         <div className="p-6 text-platinum">{children}</div>
       </Glass>
