@@ -22,18 +22,18 @@
 
 .shadow-effect-offset::after {
   top: -6px !important;
-  left: -6px !important;
+  /* left: -6px !important; */
 }
 
 .shadow-effect::after {
   content: "";
   height: 100%;
-  width: 100%;
+  width: calc(100% - 12px);
   position: absolute;
   background-color: var(--color-dusty-grape);
   z-index: -1;
   top: 0;
-  left: 0;
+  left: 6px;
   border-radius: 24px;
 }
 
@@ -71,16 +71,21 @@
 }
 
 .button-glass:hover {
-  backdrop-filter: blur(1px) !important;
+  backdrop-filter: blur(24px) !important;
   -webkit-backdrop-filter: blur(1px);
 }
 
 .button-shadow::after {
-  transition: transform 0.2s ease-in-out;
+  transition:
+    transform 0.2s ease-in-out,
+    width 0.2s ease-in-out;
   background-color: var(--color-black);
+  width: 100%;
+  left: 0;
   /* background-color: var(--color-gold); */
 }
 
 .button-shadow:hover::after {
-  transform: translate(-6px, -6px);
+  width: calc(100% - 12px);
+  transform: translateY(-6px) translateX(6px);
 }
