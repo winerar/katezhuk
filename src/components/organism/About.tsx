@@ -1,6 +1,6 @@
 import Typography from "../atom/Typography";
 
-function Contact() {
+function About() {
   return (
     <div>
       <Typography component="h2">Как со мной связаться</Typography>
@@ -9,4 +9,4 @@ function Contact() {
   );
 }
 
-export default Contact;
+export default About;
