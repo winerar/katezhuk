@@ -1,8 +1,10 @@
-import content from "@/assets/data/content.json";
+import getContent from "../../assets/data/content";
 import TelegramIcon from "../../assets/icons/TelegramIcon";
 import InstagramIcon from "../../assets/icons/InstagramIcon";
 
 function Social() {
+  const content = getContent();
+
   return (
     <ul className="flex gap-3">
       <li>

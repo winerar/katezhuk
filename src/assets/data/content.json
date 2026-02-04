@@ -7,21 +7,41 @@
   "instagram": "Инстаграм",
   "blogLink": "https://t.me/kate_zhuk_psy",
   "blog": "Перейти в мой блог",
-  "packages": [
-    {
-      "title": "4 сессии",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "price": "16 000 ₽"
+  "priceHeader": "Пакеты консультаций и цены",
+  "packages": {
+    "individual": {
+      "name": "Индивидуальная терапия",
+      "prices": [
+        {
+          "title": "1 сессия",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "price": "4 500 ₽",
+          "duration": "1 сессия 55 минут"
+        },
+        {
+          "title": "4 сессии",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "price": "16 000 ₽",
+          "duration": "4 сессии по 55 минут"
+        }
+      ]
     },
-    {
-      "title": "8 сессий",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "price": "30 000 ₽"
-    },
-    {
-      "title": "12 сессий",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "price": "43 000 ₽"
+    "couples": {
+      "name": "Парная терапия",
+      "prices": [
+        {
+          "title": "1 сессия",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "price": "5 500 ₽",
+          "duration": "1 сессия 80 минут"
+        },
+        {
+          "title": "4 сессии",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "price": "20 000 ₽",
+          "duration": "4 сессии по 80 минут"
+        }
+      ]
     }
-  ]
+  }
 }

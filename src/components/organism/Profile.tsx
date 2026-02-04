@@ -1,10 +1,12 @@
 import Typography from "../atom/Typography";
-import content from "@/assets/data/content.json";
+import getContent from "../../assets/data/content";
 import photo from "@/assets/images/kate_zhuk.jpg";
 import Image from "../molecule/Image";
 import Link from "../molecule/Link";
 
 function Profile() {
+  const content = getContent();
+
   return (
     <div className="flex-col-reverse xl:flex-row flex justify-between gap-6">
       <div className="w-full xl:w-2/3">

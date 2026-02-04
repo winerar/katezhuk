@@ -5,7 +5,10 @@ function Header() {
     <header className="text-platinum rounded-xl">
       <Glass type="offset">
         <div className="h-32 lg:h-24 p-6 flex flex-col lg:flex-row items-center justify-between">
-          Обычно здесь список ссылок, но можно вывести занудную цитату
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam
+          exercitationem totam quis nihil minima, obcaecati vitae nulla, aliquid
+          saepe nisi quia, sequi distinctio. Quae optio nam, qui quam iure
+          libero.
         </div>
       </Glass>
     </header>
