@@ -11,7 +11,7 @@ type Props = {
 
 function ContentBox({ title, titleProps, paragraphs }: Props) {
   return (
-    <div className="w-full">
+    <div>
       <Typography
         component={titleProps?.component || "h2"}
         className={titleProps?.className}
