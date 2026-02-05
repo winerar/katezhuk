@@ -8,7 +8,7 @@ function Card({ children }: Props) {
   return (
     <div className="">
       <Glass type="offset">
-        <div className="p-6 text-platinum">{children}</div>
+        <div className="text-platinum p-6">{children}</div>
       </Glass>
     </div>
   );

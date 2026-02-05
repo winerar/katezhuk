@@ -9,7 +9,7 @@ function Profile() {
   const content = getContent();
 
   return (
-    <div className="flex-col-reverse 2xl:flex-row flex justify-between gap-6">
+    <div className="flex flex-col-reverse justify-between gap-6 2xl:flex-row">
       <div className="w-full 2xl:w-2/3">
         <Typography component="h1">{content.fullName}</Typography>
         <ContentBox title={content.info.title} paragraphs={content.info.text} />

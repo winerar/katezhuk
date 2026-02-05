@@ -15,7 +15,7 @@ function PriceItem({ title, description, price, duration }: Props) {
       <Typography component="p">{description}</Typography>
       <div className="flex justify-between pt-6">
         <Typography component="span">{duration}</Typography>
-        <Typography component="span" className="text-2xl font-numerical">
+        <Typography component="span" className="font-numerical text-2xl">
           {price}
         </Typography>
       </div>

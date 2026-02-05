@@ -6,7 +6,7 @@ function Footer() {
   return (
     <footer className="text-platinum rounded-xl">
       <Glass type="offset">
-        <div className="h-32 lg:h-24 p-6 flex flex-col lg:flex-row items-center justify-between">
+        <div className="flex h-32 flex-col items-center justify-between p-6 lg:h-24 lg:flex-row">
           <Copyright />
           <Social />
         </div>

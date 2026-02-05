@@ -4,7 +4,7 @@ function Header() {
   return (
     <header className="text-platinum rounded-xl">
       <Glass type="offset">
-        <div className="h-32 lg:h-24 p-6 flex flex-col lg:flex-row items-center justify-between">
+        <div className="flex h-32 flex-col items-center justify-between p-6 lg:h-24 lg:flex-row">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam
           exercitationem totam quis nihil minima, obcaecati vitae nulla,
         </div>

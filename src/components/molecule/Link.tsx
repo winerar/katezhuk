@@ -11,11 +11,11 @@ function Link({ href, title }: Props) {
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="text-platinum font-semibold uppercase text-center w-full lg:w-auto"
+      className="text-platinum w-full text-center font-semibold uppercase lg:w-auto"
     >
       <div className="shadow-effect button-shadow">
         <div className="backdrop-glass button-glass">
-          <Typography component="span" className="py-3 px-6 block">
+          <Typography component="span" className="block px-6 py-3">
             {title}
           </Typography>
         </div>

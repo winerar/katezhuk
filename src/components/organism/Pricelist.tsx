@@ -14,8 +14,8 @@ function Pricelist() {
           <Typography component="h3">
             {content.packages.individual.name}
           </Typography>
-          <div className="flex flex-col lg:flex-row gap-3 justify-center">
-            {content.packages.individual.prices.map(pkg => (
+          <div className="flex flex-col justify-center gap-3 lg:flex-row">
+            {content.packages.individual.prices.map((pkg) => (
               <PriceItem
                 key={pkg.title}
                 title={pkg.title}
@@ -30,8 +30,8 @@ function Pricelist() {
           <Typography component="h3">
             {content.packages.couples.name}
           </Typography>
-          <div className="flex flex-col lg:flex-row gap-3 justify-center">
-            {content.packages.couples.prices.map(pkg => (
+          <div className="flex flex-col justify-center gap-3 lg:flex-row">
+            {content.packages.couples.prices.map((pkg) => (
               <PriceItem
                 key={pkg.title}
                 title={pkg.title}
