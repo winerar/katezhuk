@@ -13,9 +13,11 @@
   --color-gold: #eebf28;
 }
 
-ul {
-  list-style-type: disc;
-  padding-left: 1.5rem;
+.markdown {
+  ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+  }
 }
 
 .shadow-effect {
