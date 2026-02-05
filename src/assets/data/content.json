@@ -1,47 +1,57 @@
 {
-  "fullName": "Екатерина Жук",
-  "professionDescription": "Клинический и практический психолог",
-  "telegramLink": "https://t.me/moonelfff",
-  "telegram": "Телеграм",
-  "instagramLink": "https://www.instagram.com/kate.zhuk.psy/",
-  "instagram": "Инстаграм",
-  "blogLink": "https://t.me/kate_zhuk_psy",
   "blog": "Перейти в мой блог",
-  "priceHeader": "Пакеты консультаций и цены",
+  "blogLink": "https://t.me/kate_zhuk_psy",
+  "fullName": "Екатерина Жук",
+  "info": {
+    "title": "Клинический и практический психолог",
+    "text": [
+      "Я психолог.",
+      "Работаю с умными, рефлексивными и чувствительными людьми, которым бывает сложно с пустотой, виной, самообесцениванием и ощущением внутреннего тупика.",
+      "Мне особенно близка работа с теми, кто много живёт «внутри», склонен к глубокому анализу.",
+      "Я работаю в длительной, а также краткосрочной психотерапии, помогая лучше понять свою психическую структуру и постепенно выстроить более устойчивые и бережные отношения с собой и жизнью.",
+      "Ко мне часто приходят специалисты из интеллектуальных сфер, в том числе IT."
+    ]
+  },
+  "instagram": "Инстаграм",
+  "instagramLink": "https://www.instagram.com/kate.zhuk.psy/",
   "packages": {
-    "individual": {
-      "name": "Индивидуальная терапия",
-      "prices": [
-        {
-          "title": "1 сессия",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          "price": "4 500 ₽",
-          "duration": "1 сессия 55 минут"
-        },
-        {
-          "title": "4 сессии",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          "price": "16 000 ₽",
-          "duration": "4 сессии по 55 минут"
-        }
-      ]
-    },
     "couples": {
       "name": "Парная терапия",
       "prices": [
         {
-          "title": "1 сессия",
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "duration": "1 сессия 80 минут",
           "price": "5 500 ₽",
-          "duration": "1 сессия 80 минут"
+          "title": "1 сессия"
         },
         {
-          "title": "4 сессии",
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "duration": "4 сессии по 80 минут",
           "price": "20 000 ₽",
-          "duration": "4 сессии по 80 минут"
+          "title": "4 сессии"
+        }
+      ]
+    },
+    "individual": {
+      "name": "Индивидуальная терапия",
+      "prices": [
+        {
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "duration": "1 сессия 55 минут",
+          "price": "4 500 ₽",
+          "title": "1 сессия"
+        },
+        {
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "duration": "4 сессии по 55 минут",
+          "price": "16 000 ₽",
+          "title": "4 сессии"
         }
       ]
     }
-  }
+  },
+  "priceHeader": "Пакеты консультаций и цены",
+  "professionDescription": "Клинический и практический психолог",
+  "telegram": "Телеграм",
+  "telegramLink": "https://t.me/moonelfff"
 }
