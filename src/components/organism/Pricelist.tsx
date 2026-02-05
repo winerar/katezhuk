@@ -2,51 +2,31 @@ import Typography from "../atom/Typography";
 import Link from "../molecule/Link";
 import PriceItem from "./PriceItem";
 import getContent from "../../assets/data/content";
+import Markdown from "react-markdown";
 
 function Pricelist() {
   const content = getContent();
 
   return (
-    <div>
+    <section>
       <Typography component="h2">{content.priceHeader}</Typography>
       <div className="flex flex-col gap-6">
-        <div>
-          <Typography component="h3">
-            {content.packages.individual.name}
-          </Typography>
-          <div className="flex flex-col justify-center gap-3 lg:flex-row">
-            {content.packages.individual.prices.map((pkg) => (
-              <PriceItem
-                key={pkg.title}
-                title={pkg.title}
-                description={pkg.description}
-                price={pkg.price}
-                duration={pkg.duration}
-              />
-            ))}
-          </div>
-        </div>
-        <div>
-          <Typography component="h3">
-            {content.packages.couples.name}
-          </Typography>
-          <div className="flex flex-col justify-center gap-3 lg:flex-row">
-            {content.packages.couples.prices.map((pkg) => (
-              <PriceItem
-                key={pkg.title}
-                title={pkg.title}
-                description={pkg.description}
-                price={pkg.price}
-                duration={pkg.duration}
-              />
-            ))}
-          </div>
+        <div className="flex flex-col flex-wrap justify-center gap-3 gap-y-5 lg:flex-row">
+          {content.pricelist.map((price) => (
+            <PriceItem
+              key={price.title}
+              title={price.title}
+              description={<Markdown>{price.description}</Markdown>}
+              price={price.price}
+              duration={price.duration}
+            />
+          ))}
         </div>
       </div>
       <div className="flex justify-center py-6">
         <Link href={content.telegramLink} title="Записаться на консультацию" />
       </div>
-    </div>
+    </section>
   );
 }
 

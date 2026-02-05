@@ -6,10 +6,10 @@ type Props = {
 function Glass({ children, type = "normal" }: Props) {
   return (
     <div
-      className={`shadow-effect ${type === "offset" && "shadow-effect-offset"}`}
+      className={`shadow-effect h-full ${type === "offset" && "shadow-effect-offset"}`}
     >
       <div
-        className={`backdrop-glass ${type === "offset" && "backdrop-glass-offset"}`}
+        className={`backdrop-glass h-full ${type === "offset" && "backdrop-glass-offset"}`}
       >
         {children}
       </div>
