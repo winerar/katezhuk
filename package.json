@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "prepare": "tw-patch install"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.18",
@@ -27,8 +28,10 @@
     "globals": "^16.5.0",
     "prettier": "^3.8.1",
     "prettier-plugin-tailwindcss": "^0.7.2",
+    "tailwindcss-patch": "^8.6.1",
     "typescript": "~5.9.3",
     "typescript-eslint": "^8.46.4",
+    "unplugin-tailwindcss-mangle": "^5.0.0",
     "vite": "^7.2.4"
   }
 }
