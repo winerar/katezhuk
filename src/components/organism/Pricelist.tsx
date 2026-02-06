@@ -12,13 +12,12 @@ function Pricelist() {
       <Typography component="h2">{content.priceHeader}</Typography>
       <div className="flex flex-col gap-6">
         <div className="flex flex-col flex-wrap justify-center gap-3 gap-y-5 lg:flex-row">
-          {content.pricelist.map((price) => (
+          {content.pricelist.map((item) => (
             <PriceItem
-              key={price.title}
-              title={price.title}
-              description={<Markdown>{price.description}</Markdown>}
-              price={price.price}
-              duration={price.duration}
+              key={item.title}
+              title={item.title}
+              description={<Markdown>{item.description}</Markdown>}
+              packages={item.packages}
             />
           ))}
         </div>
