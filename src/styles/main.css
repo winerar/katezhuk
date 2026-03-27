@@ -57,6 +57,12 @@
 .backdrop-glass-offset {
   backdrop-filter: blur(0.2rem) !important;
   -webkit-backdrop-filter: blur(0.2rem);
+  transition: backdrop-filter 0.3s ease-in-out;
+}
+
+.backdrop-glass-offset:hover {
+  backdrop-filter: blur(2rem) !important;
+  -webkit-backdrop-filter: blur(0);
 }
 
 .backdrop-glass::before {
@@ -76,8 +82,8 @@
 
 .button-glass {
   transition:
-    backdrop-filter 0.2s ease-in-out,
-    box-shadow 0.2s ease-in-out;
+    backdrop-filter 0.3s ease-in-out,
+    box-shadow 0.3s ease-in-out;
   position: relative;
   box-shadow:
     0 0 2px 1px rgba(0, 0, 0, 0.7) inset,
@@ -94,8 +100,8 @@
 
 .button-shadow::after {
   transition:
-    transform 0.2s ease-in-out,
-    width 0.2s ease-in-out;
+    transform 0.3s ease-in-out,
+    width 0.3s ease-in-out;
   background-color: var(--color-black);
   width: 100%;
   left: 0;
