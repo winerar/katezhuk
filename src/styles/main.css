@@ -72,8 +72,8 @@
   width: 100%;
   height: 100%;
   box-shadow:
-    0 0 2px 2px rgba(0, 0, 0, 0.7) inset,
-    0 0 6px 3px rgba(255, 255, 255, 1) inset;
+    0 0 2px 1px rgba(0, 0, 0, 0.7) inset,
+    0 0 6px 2px rgba(255, 255, 255, 1) inset;
   border-radius: 1.5rem;
 }
 
@@ -82,6 +82,7 @@
   border: 1px solid red;
   background-image: url("../assets/images/noise.svg#grainy");
   background-repeat: repeat;
+  background-size: 4rem 4rem;
   filter: grayscale(100%);
   position: absolute;
   top: 0;
@@ -107,6 +108,7 @@
   content: "";
   background-image: url("../assets/images/noise.svg#grainy");
   background-repeat: repeat;
+  background-size: 4rem 4rem;
   filter: grayscale(100%);
   position: absolute;
   top: 0;
