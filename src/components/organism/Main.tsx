@@ -3,7 +3,7 @@ import Profile from "./Profile";
 
 function Main() {
   return (
-    <main className="flex grow flex-col gap-6 text-black">
+    <main className="flex grow flex-col gap-8 text-black">
       <Profile />
       <Pricelist />
     </main>
