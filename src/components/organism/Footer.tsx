@@ -5,7 +5,7 @@ import Social from "./Social";
 function Footer() {
   return (
     <footer className="text-platinum rounded-xl">
-      <Glass type="offset">
+      <Glass>
         <div className="flex h-32 flex-col items-center justify-between p-6 lg:h-24 lg:flex-row">
           <Copyright />
           <Social />

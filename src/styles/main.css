@@ -46,12 +46,50 @@
 .backdrop-glass {
   background: rgba(0, 0, 0, 0.15);
   border-radius: 1.5rem;
-  border-style: double;
   position: relative;
   z-index: 0;
   box-shadow:
     0 0 1px 1px rgba(0, 0, 0, 0.25) inset,
-    0 0 2px 2px rgba(255, 255, 255, 0.7) inset;
+    0 0 3px 2px rgba(255, 255, 255, 0.7) inset;
+}
+
+.image-glass {
+  overflow: hidden;
+}
+
+.image-glass img {
+  transition: transform 0.5s ease-in-out;
+}
+
+.image-glass:hover img {
+  transform: scale(1.1);
+}
+
+.image-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow:
+    0 0 2px 2px rgba(0, 0, 0, 0.7) inset,
+    0 0 6px 3px rgba(255, 255, 255, 1) inset;
+  border-radius: 1.5rem;
+}
+
+.image-shadow::before {
+  content: "";
+  border: 1px solid red;
+  background-image: url("../assets/images/noise.svg#grainy");
+  background-repeat: repeat;
+  filter: grayscale(100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.2;
+  border-radius: 1.5rem;
 }
 
 .backdrop-glass-offset {

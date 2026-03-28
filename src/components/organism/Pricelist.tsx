@@ -22,9 +22,7 @@ function Pricelist() {
           ))}
         </div>
       </div>
-      <div className="flex justify-center py-6">
-        <Link href={content.telegramLink} title="Записаться на консультацию" />
-      </div>
+      <Link href={content.telegramLink} title={content.bookConsultation} />
     </section>
   );
 }

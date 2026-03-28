@@ -1,5 +1,3 @@
-import Glass from "../atom/Glass";
-
 type Props = {
   src: string;
   alt: string;
@@ -9,13 +7,12 @@ type Props = {
 function Image({ src, alt, className }: Props) {
   return (
     <div className={className}>
-      <Glass type="offset">
-        <img
-          src={src}
-          alt={alt}
-          className={`rounded-3xl opacity-85 ${className}`}
-        />
-      </Glass>
+      <div className="shadow-effect shadow-effect-offset">
+        <div className="image-glass rounded-3xl">
+          <img src={src} alt={alt} className={className} />
+          <div className="image-shadow" />
+        </div>
+      </div>
     </div>
   );
 }

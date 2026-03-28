@@ -1,16 +1,11 @@
 type Props = {
   children: React.ReactNode;
-  type?: "normal" | "offset";
 };
 
-function Glass({ children, type = "normal" }: Props) {
+function Glass({ children }: Props) {
   return (
-    <div
-      className={`shadow-effect h-full ${type === "offset" && "shadow-effect-offset"}`}
-    >
-      <div
-        className={`backdrop-glass h-full ${type === "offset" && "backdrop-glass-offset"}`}
-      >
+    <div className="shadow-effect shadow-effect-offset h-full">
+      <div className="backdrop-glass backdrop-glass-offset h-full">
         {children}
       </div>
     </div>

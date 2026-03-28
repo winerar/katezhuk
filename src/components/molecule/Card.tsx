@@ -7,7 +7,7 @@ type Props = {
 function Card({ children }: Props) {
   return (
     <div className="flex-1 lg:min-w-md xl:max-w-xs 2xl:min-w-100">
-      <Glass type="offset">
+      <Glass>
         <div className="text-platinum flex h-full flex-col justify-between p-6">
           {children}
         </div>
