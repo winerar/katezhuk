@@ -3,18 +3,20 @@ import photo from "@/assets/images/kate_zhuk.jpg";
 import Image from "../molecule/Image";
 import Link from "../molecule/Link";
 import ContentBox from "../molecule/ContentBox";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function Profile() {
   const data = getContent();
 
-  const [content, setContent] = useState("");
+  const [content, setContent] = useState<string | undefined>(undefined);
 
-  fetch(data.info.contentPath)
-    .then((response) => response.text())
-    .then((content) => {
-      setContent(content);
-    });
+  useEffect(() => {
+    fetch(data.info.contentPath)
+      .then((response) => response.text())
+      .then((content) => {
+        setContent(content);
+      });
+  }, [data.info.contentPath]);
 
   return (
     <section className="flex flex-col-reverse justify-between gap-6 lg:flex-row">

@@ -1,15 +1,21 @@
+import getContent from "../../assets/data/content";
 import { parseMarkdown } from "../../utils/markdownParser";
 
 type Props = {
-  content: string;
+  content: string | undefined;
 };
 
 function ContentBox({ content }: Props) {
-  console.log(content);
+  const data = getContent();
+
   return (
     <div>
       <div className="markdown content-markdown flex flex-col gap-3">
-        {parseMarkdown(content)}
+        {content === undefined ? (
+          <div className="h-100">{data.loading}</div>
+        ) : (
+          parseMarkdown(content)
+        )}
       </div>
     </div>
   );
