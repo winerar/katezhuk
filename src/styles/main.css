@@ -82,7 +82,7 @@
   border: 1px solid red;
   background-image: url("../assets/images/noise.svg#grainy");
   background-repeat: repeat;
-  background-size: 4rem 4rem;
+  background-size: 6rem 6rem;
   filter: grayscale(100%);
   position: absolute;
   top: 0;
@@ -108,7 +108,7 @@
   content: "";
   background-image: url("../assets/images/noise.svg#grainy");
   background-repeat: repeat;
-  background-size: 4rem 4rem;
+  background-size: 6rem 6rem;
   filter: grayscale(100%);
   position: absolute;
   top: 0;
