@@ -17,6 +17,7 @@ function Image({ src, alt, className }: Props) {
             alt={alt}
             className="w-full lg:max-w-160 lg:min-w-120"
             fetchPriority="high"
+            loading="eager"
           />
           <div className="image-shadow" />
         </div>
