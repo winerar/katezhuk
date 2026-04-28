@@ -1,5 +1,5 @@
 import getContent from "../../assets/data/content";
-import photo from "@/assets/images/photo.webp?responsive";
+import photo from "@/assets/images/photo.webp";
 import Image from "../molecule/Image";
 import Link from "../molecule/Link";
 import ContentBox from "../molecule/ContentBox";
