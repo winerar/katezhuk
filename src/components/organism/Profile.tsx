@@ -32,7 +32,11 @@ function Profile() {
         <Link href={data.testLink} title={data.testTitle} />
       </div>
       <div>
-        <Image src={photo} alt={data.fullName} className="w-full" />
+        <Image
+          src={photo}
+          alt={data.fullName}
+          className="flex w-full justify-center"
+        />
       </div>
     </section>
   );
