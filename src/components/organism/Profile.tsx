@@ -29,7 +29,7 @@ function Profile() {
         <ContentBox content={content} />
         <Link href={data.telegramLink} title={data.bookConsultation} />
         <Link href={data.blogLink} title={data.blog} />
-        <Link href={data.testLink} title={data.testTitle} />
+        {/* <Link href={data.testLink} title={data.testTitle} /> */}
       </div>
       <div>
         <Image
